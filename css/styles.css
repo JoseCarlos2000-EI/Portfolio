@@ -24,7 +24,7 @@ body {
 header {
     width: 100%;
     min-height: 4rem;
-    max-width: 120rem;
+    max-width: 120rem !important;
     max-height: 20vh;
     background-color: var(--gray-light);
     display: flex;
@@ -122,7 +122,7 @@ main .details span:nth-of-type(1) {
 
 
 main .details h2 {
-    font-size: 4rem;
+    font-size: 600%;
     margin: 0.5rem 0 0.5rem 0;
     letter-spacing: 0.2rem;
 }
@@ -171,6 +171,7 @@ main svg {
     padding-top: 0.8rem;
     max-width: 120rem;
     margin: 0;
+    background-color: var(--gray-light);
 }
 
 .skills {
@@ -348,10 +349,10 @@ footer h4 {
 /* RESPONSIVE */
 
 /* Pantallas pequeñas (teléfonos móviles en modo retrato) */
-@media (max-width: 480px) {
+@media only screen and (max-width: 480px) {
 
     header{
-       max-width: 480px;
+       max-width: 100%;
     }
     header .options{
         gap:0.5rem;
@@ -394,7 +395,7 @@ footer h4 {
     main  img{
         width: 80%;
         padding-top: 3rem;
-        padding-bottom: 4rem;
+        padding-bottom: 15%;
     }
 
     main svg{
@@ -428,7 +429,7 @@ footer h4 {
         width: 50%;
         font-size: 2rem;
         min-height: 20rem;
-        margin-top: 2.8rem;
+        margin-top: 2.8rem !important;
     }
 
     .contact form input:nth-of-type(1),
@@ -462,16 +463,349 @@ footer h4 {
 }
 
 /* Pantallas medianas (teléfonos móviles en modo paisaje y tablets en modo retrato) */
-@media (max-width: 768px) {
+@media only screen and (min-width: 481px) and (max-width: 768px) {
 
+    header{
+        max-width: 100%;
+     }
+     header .options{
+         gap:0.5rem;
+         padding: 0.2rem 0rem;
+     }
+     header .options a{
+         
+         font-size: 0.9rem;
+     }
+     main {
+         gap:0rem;
+         min-height: 70vh;
+         padding: 0;
+         margin:0;
+     }
+ 
+     main .details{
+         font-size: 0.6rem;
+         margin-left: 0.1rem;
+         width: 85%;
+         margin-top: 2rem;
+     }
+ 
+     main .details span:nth-of-type(1){
+         font-size: 1rem;
+     }
+ 
+     main .details h2{
+         font-size: 3.2rem;
+     }
+ 
+     main .details span{
+         font-size:0.82rem;
+     }
+ 
+     main .details button{
+         padding: 0.8rem 1.5rem;
+     }
+ 
+     main  img{
+         width: 70%;
+         padding-top: 4rem;
+         padding-bottom: 15%;
+     }
+ 
+     main svg{
+         bottom: -2.5rem;
+     }
+     .stack{
+         padding: 0;
+         min-height: 5rem;
+         gap: 3rem;
+     }
+     .stack .skills {
+         min-height: 8rem;
+     }
+     .stack .skills h3{
+         margin: 0;
+         font-size: 1.2rem;
+     }
+     .stack .skills .cards-skills{
+         width: 100%;
+     }
+ 
+     .stack .skills .cards-skills .card-skill{
+         padding: 0;
+     }
+ 
+     .contact{
+         padding-top:4rem;
+         padding-bottom: 4rem;
+     }
+ 
+     .contact form{
+         width: 50%;
+         font-size: 2rem;
+         min-height: 20rem;
+         margin-top: 7rem;
+     }
+ 
+     .contact form input:nth-of-type(1),
+     input:nth-of-type(2),input:nth-of-type(3),
+     input:nth-of-type(4){
+         padding-top: 0.5rem;
+         padding-bottom: 0.5rem;
+     }
+ 
+     .contact form input:nth-of-type(4){
+         min-height: 4rem;
+     }
+ 
+     .contact form input::placeholder{
+         font-size: 0.8rem;
+     }
+ 
+     .contact form h3{
+         margin: 0;
+     }
+     .contact form button{
+         margin: 0;
+     }
+ 
+     .contact svg{
+         top: -1.1rem;
+     }
+     footer h4{
+         font-size: 0.8rem;
+     }
 }
 
 /* Pantallas grandes (tablets en modo paisaje y computadoras de escritorio pequeñas) */
-@media (max-width: 1024px) {
-
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    header{
+        max-width: 100%;
+     }
+     header .options{
+         gap:0.5rem;
+         padding: 0.2rem 0rem;
+     }
+     header .options a{
+         
+         font-size: 0.9rem;
+     }
+     main {
+         gap:0rem;
+         min-height: 70vh;
+         padding: 0;
+         margin:0;
+     }
+ 
+     main .details{
+         font-size: 0.6rem;
+         margin-left: 0.1rem;
+         width: 85%;
+         margin-top: 2rem;
+     }
+ 
+     main .details span:nth-of-type(1){
+         font-size: 1rem;
+     }
+ 
+     main .details h2{
+         font-size: 3.2rem;
+     }
+ 
+     main .details span{
+         font-size:0.82rem;
+     }
+ 
+     main .details button{
+         padding: 0.8rem 1.5rem;
+     }
+ 
+     main  img{
+         width: 60%;
+         padding-top: 3.5rem;
+         padding-bottom: 15%;
+     }
+ 
+     main svg{
+         bottom: -2.5rem;
+     }
+     .stack{
+         padding: 0;
+         min-height: 5rem;
+         gap: 2rem;
+     }
+     .stack .skills {
+         min-height: 8rem;
+     }
+     .stack .skills h3{
+         margin: 0;
+         font-size: 1.2rem;
+     }
+     .stack .skills .cards-skills{
+         width: 100%;
+         gap: 2.5rem;
+     }
+ 
+     .stack .skills .cards-skills .card-skill{
+         padding: 0;
+     }
+ 
+     .contact{
+         padding-top:4rem;
+         padding-bottom: 4rem;
+     }
+ 
+     .contact form{
+         width: 42%;
+         font-size: 2rem;
+         min-height: 20rem;
+         margin-top: 9rem;
+     }
+ 
+     .contact form input:nth-of-type(1),
+     input:nth-of-type(2),input:nth-of-type(3),
+     input:nth-of-type(4){
+         padding-top: 0.5rem;
+         padding-bottom: 0.5rem;
+     }
+ 
+     .contact form input:nth-of-type(4){
+         min-height: 4rem;
+     }
+ 
+     .contact form input::placeholder{
+         font-size: 0.8rem;
+     }
+ 
+     .contact form h3{
+         margin: 0;
+     }
+     .contact form button{
+         margin: 0;
+     }
+ 
+     .contact svg{
+         top: -1.1rem;
+     }
+     footer h4{
+         font-size: 0.8rem;
+     }
 }
 
 /* Pantallas extra grandes (computadoras de escritorio grandes) */
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
+    header{
+        max-width: 100%;
+     }
+     header .options{
+         gap:0.5rem;
+         padding: 0.2rem 0rem;
+     }
+     header .options a{
+         
+         font-size: 0.9rem;
+     }
+     main {
+         gap:0rem;
+         min-height: 70vh;
+         padding: 0;
+         margin:0;
+         margin-bottom: 10rem;
+     }
+ 
+     main .details{
+         font-size: 0.6rem;
+         margin-left: 0.1rem;
+         width: 85%;
+         margin-top: 2rem;
+     }
+ 
+     main .details span:nth-of-type(1){
+         font-size: 1rem;
+     }
+ 
+     main .details h2{
+         font-size: 600%;
+     }
+ 
+     main .details span{
+         font-size : 150%;
+     }
+ 
+     main .details button{
+         padding: 1rem 2.5rem;
+     }
+ 
+     main  img{
+         width: 45%;
+         padding-top: 3.5rem;
+         padding-bottom: 6%;
+     }
+ 
+     main svg{
+         bottom: -15rem;
+     }
+     .stack{
+         padding: 0;
+         min-height: 5rem;
+         gap: 2rem;
+     }
+     .stack .skills {
+         min-height: 8rem;
+     }
+     .stack .skills h3{
+         margin: 0;
+         font-size: 1.2rem;
+     }
+     .stack .skills .cards-skills{
+         width: 100%;
+         gap: 2.5rem;
+     }
+ 
+     .stack .skills .cards-skills .card-skill{
+         padding: 0;
+     }
+ 
+     .contact{
+         padding-top:15%;
+         padding-bottom: 4rem;
+     }
+ 
+     .contact form{
+         width: 40%;
+         font-size: 2rem;
+         min-height: 20rem;
+         margin-top: 9rem;
+     }
+ 
+     .contact form input:nth-of-type(1),
+     input:nth-of-type(2),input:nth-of-type(3),
+     input:nth-of-type(4){
+         padding-top: 4%;
+         padding-bottom: 3%;
+     }
+ 
+     .contact form input:nth-of-type(4){
+         min-height: 4rem;
+     }
+ 
+     .contact form input::placeholder{
+         font-size: 100%;
+     }
+ 
+     .contact form h3{
+         margin: 0;
+     }
+     .contact form button{
+         margin: 0;
+     }
+ 
+     .contact svg{
+         top: -1.1rem;
+     }
+     footer h4{
+         font-size: 0.8rem;
+     }
+
 
 }
