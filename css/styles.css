@@ -725,11 +725,11 @@ footer h4 {
      }
  
      main .details h2{
-         font-size: 600%;
+         font-size: 750%;
      }
  
      main .details span{
-         font-size : 150%;
+         font-size : 170%;
      }
  
      main .details button{
@@ -751,15 +751,15 @@ footer h4 {
          gap: 2rem;
      }
      .stack .skills {
-         min-height: 8rem;
+         min-height: 10rem;
      }
      .stack .skills h3{
-         margin: 0;
-         font-size: 1.2rem;
+         margin: 0 0 5.5rem 0;
+         font-size: 2.5rem;
      }
      .stack .skills .cards-skills{
          width: 100%;
-         gap: 2.5rem;
+         gap: 4rem;
      }
  
      .stack .skills .cards-skills .card-skill{
